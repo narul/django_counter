@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block body %}
+<a href="{% url 'increment' %}">Increment</a>
+<a href="{% url 'decrement' %}">Decrement</a>
+<div id="counter">Current counter: {{instance.value}}</div>
+{% endblock %}
